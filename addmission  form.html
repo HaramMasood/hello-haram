@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+<body>
+
+    <h2>Admission Form</h2>
+
+    <!-- Form action set to # for local testing -->
+    <form action="#" method="POST">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+        <label for="course">Course Applied For:</label>
+        <select id="course" name="course" required>
+            <option value="computer_science">Computer Science</option>
+            <option value="electrical_engineering">Electrical Engineering</option>
+            <option value="mechanical_engineering">Mechanical Engineering</option>
+            <option value="civil_engineering">Civil Engineering</option>
+        </select><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required> Male
+        <input type="radio" id="female" name="gender" value="female" required> Female<br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
